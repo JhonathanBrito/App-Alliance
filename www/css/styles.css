@@ -14,8 +14,8 @@
     background: #000000;
 }
 .img{
-	margin-top: 5px;margin-left: 0px; height: 90%;
+	margin-left: 10px;
 }
-.img-principal {
-	
+.img-principal img{
+		height: 1%;
 }
