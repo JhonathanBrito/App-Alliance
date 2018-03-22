@@ -19,7 +19,11 @@
 .historia{
 text-align: center;
 }
-.conteudo{
-font-weight: bold;
+.galeria{
+  text-align: center;
 }
-	
+.galeria_assunto{
+	text-align: center;
+	font: uppercase;
+}
+

@@ -41,7 +41,7 @@
  
 </head>
 
-<body>
+<body class="conteudo">
    <div id="app">
     <!-- Status bar overlay for fullscreen mode-->
     <div class="statusbar"></div>
@@ -81,9 +81,7 @@
               <!-- <li>
                 <a href="#" data-popup=".cadastro" class="popup-open">Cadastre-se</a>
               </li> -->
-              <li>
-                <a href="#" class="logoff">Logoff</a>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -104,11 +102,14 @@
             <span class="tabbar-label">Galeria</span>
           </a>
           
-          <a href="/" class="tab-link tab-link-active">
-            <i class="icon f7-icons ios-only">home</i>
-            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
-            <i class="icon material-icons md-only">home</i>
-            <span class="tabbar-label">Home</span>
+          <!-- <a href="/" class="tab-link tab-link-active"> -->
+            <div class="icon_login">
+              
+                  <i class="f7-icons color-red">persons</i>
+                  <a href="#" data-login-screen="#my-login-screen" class="login-screen-open">Login</a>
+                
+            </div>
+
           </a>
           <div>
           <a href="/form/" class="tab-link">
@@ -129,19 +130,20 @@
           <div class="navbar color-theme-gray">
             <div class="navbar-inner">
               <div class="left">
-                <a href="#" class="link icon-only panel-open" data-panel="left">
+                <a href="" class="link icon-only" data-panel="">
                     <img class="img"  src="img/logo.png" alt="Logo aliance">
                   <!-- <i class="icon f7-icons ios-only">menu</i>
                   <i class="icon material-icons md-only">menu</i> -->
                 </a>
               </div>
-              <div class="right">
-                <a href="#" class="link icon-only panel-open" data-panel="right">
-                  <i class="f7-icons color-red">persons_fill</i>
-                  <!-- <i class="icon f7-icons ios-only">menu</i>
-                  <i class="icon material-icons md-only">menu</i> -->
-                </a>
-              </div>
+              <!-- <div class="right">
+                <a href="#view-home" class="tab-link tab-link-active">
+            <i class="icon f7-icons ios-only">home</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">home_fill</i>
+            <i class="icon material-icons md-only">home</i>
+            <span class="tabbar-label">Home</span>
+          </a>
+              </div> -->
             </div>
           </div>
 
@@ -154,8 +156,11 @@
             <div>
               <a href="#" class="col button color-orange painel-close login-screen-open" data-login-screen="#my-login-screen"></a>
             </div>
-            <h2 class="historia">Historia</h2>
-            <p class="conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati debitis, assumenda voluptate, velit quas impedit fugit nisi odio dolor dolore, incidunt dolorem nobis dolorum error laudantium perspiciatis necessitatibus dignissimos in!</p>
+            <section>
+              <h2 class="historia">Historia</h2>
+            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati debitis, assumenda voluptate, velit quas impedit fugit nisi odio dolor dolore, incidunt dolorem nobis dolorum error laudantium perspiciatis necessitatibus dignissimos in!</p>
+            </section>
+            
 
             <!-- <div class="block-title">Navigation</div>
             <div class="list">
@@ -351,20 +356,26 @@
               </ul>
             </div>
             <div class="list">
-              <!-- <ul>
+
+              <ul>
                 <li>
-                  <a href="#" class="item-link list-button login-button SignUp">Sign Up</a>
+                  <a href="#" class="item-link list-button login-button SignUp">Cadastrar Login</a>
                 </li>
-              </ul> -->
                 <li>
                   <a href="#" class="item-link list-button login-button SignIn">Logar</a>
                 </li>
-              </ul>
+                <!-- <li>
+                <a href="#" class="logoff">Logoff</a>
+              </li> -->
+                <li>
+                  <a href="/form-user/" data-view=".view-main" class="panel-close">Cadastra Usuario</a>
+                </li>
                 <li>
                   <a href="#" class="item-link list-button login-button SignOut">Sair</a>
                 </li>
               </ul> 
               <!-- <div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div> -->
+
             </div>
           </div>
         </div>
@@ -383,7 +394,7 @@
   <script src="js/firebase.js"></script>
   <script src="js/firebaseapp.js"></script>
   <script src="js/app.js"></script>
-
+<script src="js/form-user.js"></script>
 
 
 
