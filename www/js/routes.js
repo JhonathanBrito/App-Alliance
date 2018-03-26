@@ -4,8 +4,25 @@ routes = [
     url: './index.html',
   },
   {
+<<<<<<< HEAD
     path: '/galeria/',
     url: './pages/galeria.html',
+=======
+    path: '/form-user/',
+    url: './pages/form-user.html',
+  },
+  {
+    path: '/cadastro/',
+    url: './pages/cadastro.html',
+  },
+  {
+    path: '/galeria/',
+    url: './pages/galeria.html',
+  },
+  {
+    path: '/sobre/',
+    url: './sobre.html',
+>>>>>>> developer
   },
   {
     path: '/about/',

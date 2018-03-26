@@ -16,6 +16,23 @@
 .img{
 	margin-left: 10px;
 }
+<<<<<<< HEAD
 .img-principal img{
 		height: 1%;
 }
+=======
+.historia{
+text-align: center;
+}
+.h2_galeria{
+  text-align: center;
+}
+.p_galeria{
+	text-align: center;
+	font: uppercase;
+}
+.imgs h3{
+  text-align: center;
+}
+
+>>>>>>> developer
