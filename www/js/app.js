@@ -96,7 +96,7 @@ $$('#my-login-screen .SignIn').on('click', function () {
   .signInWithEmailAndPassword(username,password) //promisses
   .then(function(){
     app.dialog.alert('Bem vindo:' + username);
-    this.$$('.toolbar-inner').text('Bem vindo:' + username + 'vc esta logado');
+    // this.$$('.toolbar-inner').text('Bem vindo:' + username + 'vc esta logado');
     $$('.logoff').show();
     $$('.login-screen-open').hide();
     $$('input#email').val('');
