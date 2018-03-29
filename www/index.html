@@ -2,17 +2,6 @@
 <html>
 <head>
 
-    <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-
     <!-- Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -32,6 +21,7 @@
     <!-- <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
 
     <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="framework7/css/framework7.min.css">
     <link rel="stylesheet" href="framework7/css/framework7-icons.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -96,19 +86,16 @@
           
           <a href="/galeria/" data-view=".view-main" class="tab-link">
             <i class="icon f7-icons ">images_fill</i>
-           <!--  <i class="icon f7-icons ios-only">list</i>
-            <i class="icon f7-icons ios-only icon-ios-fill">list_fill</i>
-            <i class="icon material-icons md-only">view_list</i> -->
             <span class="tabbar-label">Galeria</span>
           </a>
+
+           <a href="/form-user/" data-view=".view-main" class="panel-close orcamento">
+             <i class="icon f7-icons ">money_dollar</i>
+              <span class="tabbar-label">Orçamento</span>
+
+
+           </a>
           
-          <!-- <a href="/" class="tab-link tab-link-active"> -->
-           <!--  <div class="icon_login">
-              
-                  <i class="f7-icons color-red">persons</i>
-                  <a href="#" data-login-screen="#my-login-screen" class="login-screen-open">Login</a>
-                
-            </div> -->
             <a href="#" data-login-screen="#my-login-screen" class="tab-link tab-link-active login-screen-open">
               <i class="icon f7-icons ios-only">person</i>
               <i class="icon f7-icons ios-only icon-ios-fill">person</i>
@@ -166,6 +153,7 @@
               <h2 class="historia">História</h2>
             <p class="texto">Samos uma empresa que trabalhamos com moveis planejados, estamos no mercado desdo ano 2000 são dois socios que administra. Começamos no fundo de uma casa e agora ja temos nossa residencia e fazemos moveis para Campinas e região!</p>
             </section>
+            <br><br><br><br>
             
 
             <!-- <div class="block-title">Navigation</div>
@@ -245,95 +233,19 @@
       <div class="view">
         <div class="page">
           <div class="navbar">
-            <div class="navbar-inner">
-              <div class="title">Popup</div>
+            <div class="navbar-inner theme-color gray">
+              <div class="title">Orçamento</div>
               <div class="right">
                 <a href="#" class="link popup-close">Fechar</a>
               </div>
             </div>
           </div>
           <div class="page-content">
-            <div class="block">
-
-          <!-- <div class="col-md-4">
-    <form>
-      <div class="form-group">
-        <label for="nameInput">Nome</label>
-        <input type="text" class="form-control" id="nameInput" placeholder="">
-      </div>
-    <br>
-      <div class="form-group">
-        <label for="senhaInput">Senha</label>
-        <input type="password" class="form-control" id="senhaInput" placeholder="">
-      </div>
-      <br>
-       <div class="form-group">
-        <label for="emailInput">Email</label>
-        <input type="email" class="form-control" id="emailInput" placeholder="">
-      </div>
-      <br>
-       <div class="form-group">
-        <label for="cidadeInput">Cidade</label>
-        <input type="text" class="form-control" id="cidadeInput" placeholder="">
-      </div>
-      <br>
-      <button class="btn btn-lg btn-block btn-primary" id="addButton">Cadastrar</button>
-    </form>
-          </div> -->
-
-            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- popup cadastro -->
-    <!-- <div class="popup cadastro">
-  <div class="view">
-    <div class="page">
-      <div class="navbar">
-        <div class="navbar-inner">
-          <div class="title">Popup</div>
-          <div class="right">
-            Link to close popup
-             <a href="#" class="link popup-close">Close</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="page-content">
-      ...
-    </div>
-  </div>
-  ...
-</div> -->
-
-  <!-- <div class="col-md-4">
-      <form>
-        <div class="form-group">
-          <label for="nameInput">Nome</label>
-          <input type="text" class="form-control" id="nameInput" placeholder="Nome">
-        </div>
-      <br>
-        <div class="form-group">
-          <label for="senhaInput">Senha</label>
-          <input type="text" class="form-control" id="senhaInput" placeholder="Senha">
-        </div>
-        <br>
-         <div class="form-group">
-          <label for="emailInput">Email</label>
-          <input type="email" class="form-control" id="emailInput" placeholder="Email">
-        </div>
-        <br>
-         <div class="form-group">
-          <label for="cidadeInput">Cidade</label>
-          <input type="text" class="form-control" id="cidadeInput" placeholder="Cidade">
-        </div>
-        <br>
-        <button class="btn btn-lg btn-block btn-primary" id="addButton">Cadastrar</button>
-        <a href="index.html" class="btn btn-lg btn-block btn-danger">Voltar</a>
-      </form>
-    </div> -->
 
     <!-- Login Screen -->
     <div class="login-screen" id="my-login-screen">
@@ -371,12 +283,9 @@
                 <li>
                   <a href="#" class="item-link list-button login-button SignIn">Logar</a>
                 </li>
-                <!-- <li>
-                <a href="#" class="logoff">Logoff</a>
-              </li> -->
                 <li>
-                  <a href="/form-user/" data-view=".view-main" class="panel-close">Cadastra Usuario</a>
-                </li>
+                <a href="#" class="logoff">Logoff</a>
+              </li>
                 <ul>
                   <li>
                   <a href="#" class="item-link list-button login-button SignOut">Sair</a>
@@ -402,7 +311,8 @@
   <script src="js/firebase.js"></script>
   <script src="js/firebaseapp.js"></script>
   <script src="js/app.js"></script>
-<script src="js/form-user.js"></script>
+  <script src="js/form-user.js"></script>
+  <script src="js/form-contato.js"></script>
 
 
 
