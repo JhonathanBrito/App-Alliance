@@ -1,7 +1,7 @@
 // Dom7
 var $$ = Dom7;
 
-    $$('.logoff').hide();
+    $$('.SignOut').hide();
      $$('.orcamento').hide();
     $$('.login-screen-open').show();
 
@@ -99,7 +99,7 @@ $$('#my-login-screen .SignIn').on('click', function () {
   .then(function(){
     app.dialog.alert('Bem vindo:' + username);
     // this.$$('.toolbar-inner').text('Bem vindo:' + username + 'vc esta logado');
-    $$('.logoff').show();
+    $$('.SignOut').show();
     $$('.orcamento').show();
     $$('.login-screen-open').show();
     $$('input#email').val('');
@@ -128,9 +128,9 @@ $$('#my-login-screen .SignOut').on('click', function () {
   .signOut()//promisses
   .then(function(){
     //this.$$('.toolbar-inner').Text('Usuario não autenticado');
-    app.dialog.alert('Usuario não autenticado');
+    app.dialog.alert('Usuario deslogado');
     app.loginScreen.close('#my-login-screen');
-    $$('.logoff').hide();
+    $$('.SignOut').hide();
     $$('.orcamento').hide();
     $$('.login-screen-open').show();
   }, function(error){
