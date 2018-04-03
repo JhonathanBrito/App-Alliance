@@ -11,7 +11,7 @@ $$(document).on('page:init','.page[data-name="form"]', function(e){
                 
                 var formData = { name: nameInput, email: emailInput, telefone: telefoneInput, bio: inputBio }
                 console.log(formData);
-                alert(JSON.stringify(formData))
+                // alert(JSON.stringify(formData))
                 firebase.database().ref().child('contato').push(formData)
                 .then( function () {
                         app.dialog.alert('Enviado com Sucesso');

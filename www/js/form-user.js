@@ -13,7 +13,7 @@ $$(document).on('page:init','.page[data-name="form-user"]', function(e){
                 
                 var formData = { name: nameInput, cidade: cidadeInput, email: emailInput, comodo: comodoInput, bio: inputBio }
                 console.log(formData);
-                alert(JSON.stringify(formData))
+                // alert(JSON.stringify(formData))
                 firebase.database().ref().child('orçamento').push(formData)
                 .then( function () {
                         app.dialog.alert('Enviado com Sucesso');
