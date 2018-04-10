@@ -10,7 +10,7 @@ var $$ = Dom7;
 var app  = new Framework7({
   root: '#app', // App root element
   id: 'io.framework7.testapp', // App bundle ID
-  name: 'Framework7', // App name
+  name: 'Alliance', // App name
   theme: 'auto', // Automatic theme detection
   // App root data
   data: function () {
@@ -74,7 +74,7 @@ $$('#my-login-screen .SignUp').on('click', function () {
   .createUserWithEmailAndPassword(username,password) //promisses
   .then(function(){
     app.dialog.alert('Bem vindo:' + username);
-    this.$$('.toolbar-inner').Text('Bem vindo:' + username);
+    // this.$$('.toolbar-inner').Text('Bem vindo:' + username);
   })
   .catch(function(error){
     console.error(error.code)
@@ -98,7 +98,7 @@ $$('#my-login-screen .SignIn').on('click', function () {
   .signInWithEmailAndPassword(username,password) //promisses
   .then(function(){
     app.dialog.alert('Bem vindo:' + username);
-    // this.$$('.toolbar-inner').text('Bem vindo:' + username + 'vc esta logado');
+    this.$$('.logado').text('Bem vindo:' + username + ' você esta logado');
     $$('.SignOut').show();
     $$('.orcamento').show();
     $$('.login-screen-open').show();
