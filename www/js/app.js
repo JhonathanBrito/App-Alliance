@@ -74,7 +74,7 @@ $$('#my-login-screen .SignUp').on('click', function () {
   .createUserWithEmailAndPassword(username,password) //promisses
   .then(function(){
     app.dialog.alert('Bem vindo:' + username);
-    // this.$$('.toolbar-inner').Text('Bem vindo:' + username);
+    this.$$('.toolbar-inner').Text('Bem vindo:' + username);
   })
   .catch(function(error){
     console.error(error.code)
@@ -98,7 +98,7 @@ $$('#my-login-screen .SignIn').on('click', function () {
   .signInWithEmailAndPassword(username,password) //promisses
   .then(function(){
     app.dialog.alert('Bem vindo:' + username);
-    this.$$('.logado').text('Bem vindo:' + username + ' você esta logado');
+    this.$$('.logado').text('Bem vindo:' + username + ' vc esta logado');
     $$('.SignOut').show();
     $$('.orcamento').show();
     $$('.login-screen-open').show();
@@ -130,9 +130,11 @@ $$('#my-login-screen .SignOut').on('click', function () {
     //this.$$('.toolbar-inner').Text('Usuario não autenticado');
     app.dialog.alert('Usuario deslogado');
     app.loginScreen.close('#my-login-screen');
+    this.$$('.logado').text('');
     $$('.SignOut').hide();
     $$('.orcamento').hide();
     $$('.login-screen-open').show();
+
   }, function(error){
     console.error(error)
   })

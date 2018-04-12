@@ -29,8 +29,8 @@ text-align: center;
 .imgs h3{
   text-align: center;
 }
-.logado{
-  text-align: center;
-  color: black;
+.principal{
+position: relative;
+height: 100%;    
 }
 

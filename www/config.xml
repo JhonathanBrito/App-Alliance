@@ -14,7 +14,7 @@
 
     <author href="http://phonegap.com" email="jhonathanbritoo@gmail.com">
         Jhonathan Brito
-    </author> 
+    </author>
 
     <!--
         If you do not want any permissions to be added to your app, add the
@@ -153,3 +153,4 @@
     </platform> -->
 
 </widget>
+
