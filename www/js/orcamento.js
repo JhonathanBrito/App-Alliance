@@ -1,4 +1,4 @@
-$$(document).on('page:init','.page[data-name="form-user"]', function(e){
+$$(document).on('page:init','.page[data-name="orcamento"]', function(e){
         var page = e.detail;
         console.log(page.name);
         $$('#btnSalvar').on('click',function () {
@@ -34,5 +34,4 @@ $$(document).on('page:init','.page[data-name="form-user"]', function(e){
         });      
 
 });      
-
 

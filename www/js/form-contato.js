@@ -1,4 +1,4 @@
-$$(document).on('page:init','.page[data-name="form"]', function(e){
+$$(document).on('page:init','.page[data-name="contato"]', function(e){
         var page = e.detail;
         console.log(page.name);
         $$('#btnEnviar').on('click',function () {

@@ -79,7 +79,7 @@ $$('#my-login-screen .SignUp').on('click', function () {
   .catch(function(error){
     console.error(error.code)
     console.error(error.message)
-    app.dialog.alert('Falha ao cadastrar, verifique o erro no console');
+    // app.dialog.alert('Falha ao cadastrar, verifique o erro no console');
     //this.$$('.toolbar-inner').Text('Bem Vindo: '+username);
   })
   // Close login screen
